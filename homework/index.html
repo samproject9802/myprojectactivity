@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Features</title>
+    <style>
+        .playlist {
+            margin: 15px;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        .playlist-track {
+            max-width: max-content;
+        }
+        .playlist-track img {
+            width: 170px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create Playlist</h2>
+    <form onsubmit="handleSubmit();">
+        <p>Title : <input type="text" id="titleField"/></p>
+        <p>Description : <input type="text" id="descField"/></p>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="playlist">
+        <div class="playlist-track">
+            <img src="playlist-1.jpg" alt="">
+            <p>Track Title </p>
+            <p>Artist </p>
+            <p>Album </p>
+            <button onclick="">Select</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
